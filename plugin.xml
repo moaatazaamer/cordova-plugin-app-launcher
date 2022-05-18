@@ -41,6 +41,11 @@
 			</config-file>
 		<config-file target="AndroidManifest.xml" parent="/manifest">
 					<queries>
+						<intent>
+  <action android:name="android.intent.action.VIEW" />
+  <category android:name="android.intent.category.BROWSABLE" />
+  <data android:scheme="https" />
+</intent>
 						<package android:name="ae.uaepass.mainapp"/>
 					</queries>
 				</config-file>
