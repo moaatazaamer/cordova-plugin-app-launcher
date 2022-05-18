@@ -68,12 +68,7 @@ public class Launcher extends CordovaPlugin {
 			final String appPackageName = options.getString("packageName");
 			cordova.getThreadPool().execute(new LauncherRunnable(this.callback) {
 				public void run() {
-					final Intent intent = new Intent(Intent.ACTION_VIEW);					
-    // The URL should either launch directly in a non-browser app (if it's the
-    // default), or in the disambiguation dialog.
-    intent.addCategory(CATEGORY_BROWSABLE);
-    intent.setFlags(FLAG_ACTIVITY_NEW_TASK | FLAG_ACTIVITY_REQUIRE_NON_BROWSER);
-    startActivity(intent);
+					final Intent intent = new Intent(Intent.ACTION_VIEW);
 					String packageName = appPackageName;
 					String passedActivityName = null;
 					if (packageName.contains("/")) {
