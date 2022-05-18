@@ -40,9 +40,9 @@
 				</feature>
 			</config-file>-->
 		        <config-file target="AndroidManifest.xml" parent="/manifest">
-				<feature name="Launcher">
+				<!--<feature name="Launcher">
 						<param name="android-package" value="com.hutchind.cordova.plugins.launcher.Launcher" />
-				</feature>
+				</feature>-->
                           <queries>
                                 <package android:name="ae.uaepass.mainapp.stg"/>
                           </queries>
