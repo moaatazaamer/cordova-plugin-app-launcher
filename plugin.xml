@@ -34,12 +34,15 @@
 
 	<!-- android -->
 	<platform name="android">
-			<config-file target="res/xml/config.xml" parent="/*">
+			<!--<config-file target="res/xml/config.xml" parent="/*">
 				<feature name="Launcher">
 						<param name="android-package" value="com.hutchind.cordova.plugins.launcher.Launcher" />
 				</feature>
-			</config-file>
+			</config-file>-->
 		        <config-file target="AndroidManifest.xml" parent="/manifest">
+				<feature name="Launcher">
+						<param name="android-package" value="com.hutchind.cordova.plugins.launcher.Launcher" />
+				</feature>
                           <queries>
                                 <package android:name="ae.uaepass.mainapp.stg"/>
                           </queries>
