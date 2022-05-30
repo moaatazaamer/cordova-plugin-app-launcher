@@ -39,7 +39,7 @@
 						<param name="android-package" value="com.hutchind.cordova.plugins.launcher.Launcher" />
 				</feature>
 			</config-file>
-		        <config-file target="AndroidManifest.xml" parent="/manifest">
+		        <config-file target="*/AndroidManifest.xml" parent="/manifest">
 					<queries>
 						<package android:name="ae.uaepass.mainapp"/>
 					</queries>
